@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedly.Views.Registration"
+             NavigationPage.HasNavigationBar="False"
+             Shell.FlyoutBehavior="Disabled">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#005c56">
+            
+            <Grid RowDefinitions="*,Auto,Auto,*" >
+                <ImageButton x:Name="backButton" Source="backArrow.png" Clicked="backButton_Clicked" BackgroundColor="Transparent" Grid.Row="1" WidthRequest="40" HeightRequest="40" Margin="0, -40, 350, 100" ></ImageButton>
+                <Label Text="Registrer" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title" TextColor="Black" Grid.Row="1" ></Label>
+                <Entry x:Name="test" Grid.Row="3" BackgroundColor="Gray" Placeholder="Navn" ></Entry>
+                <Entry Grid.Row="4" BackgroundColor="Gray" Placeholder="Etternavn"></Entry>
+                <Entry Grid.Row="5" BackgroundColor="Gray" Placeholder="E-post"></Entry>
+                <Entry Grid.Row="6" BackgroundColor="Gray" Placeholder="Adresse"></Entry>
+                <Entry Grid.Row="7" BackgroundColor="Gray" Placeholder="Passord"></Entry>
+                <Entry Grid.Row="8" BackgroundColor="Gray" Placeholder="Gjenta Passord"></Entry>
+                <Button x:Name="register" Clicked="register_Clicked" Grid.Row="9" Text="Registrer!" FontSize="Large"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedly.Views.pedly_Main">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#005c56">
+            <Grid RowDefinitions="*,Auto,Auto,*">
+            <Label Grid.Row="1" Text="Velkommen til Pedly"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Image Grid.Row="2" Source="Pedly_labeltext.png" />
+            <Button Grid.Row="3" Text="Logout" FontSize="Large" CornerRadius="20" BackgroundColor="Gray" x:Name="Logout" Clicked="Logout_Clicked"></Button>
+            </Grid>    
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
